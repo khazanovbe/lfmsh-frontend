@@ -34,8 +34,7 @@ addIncomeBtn.addEventListener('click', () => {
 function renderUI() {
     const table = document.querySelector('.transaction-table-body');
 
-    table.childNodes.forEach(node => table.removeChild(node));
-
+    table.innerHTML = '';
     transactions.forEach((transaction) => {
         const newLine = document.createElement('tr');
         const nameCell = document.createElement('td');
