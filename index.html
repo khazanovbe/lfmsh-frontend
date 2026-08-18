@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expence Traker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-info">
+        <div class="balance main-info_panel">
+            <h3 class="balance_header">Баланс</h3>
+            <span class="balance_number">100р</span>
+        </div>
+        <div class="income main-info_panel">
+            <h3 class="income_header">Доход</h3>
+            <span class="income_number">200р</span>
+        </div>
+        <div class="expence main-info_panel">
+            <h3 class="expence_header">Расход</h3>
+            <span class="expence_number">400р</span>
+        </div>
+    </div>
+    <div class="transaction-input">
+        <div class="name">
+            <label>Название операции <input type="text"></label>
+        </div>
+        <div class="amount">
+            <label>Cумма <input type="number"></label>
+
+        </div>
+        <button class="income-button">Доход</button>
+        <button class="expence-button">Расход</button>
+    </div>
+    <div class="transaction-list">
+        <table class="transaction-table">
+            <thead>
+                <tr>
+                    <th>
+                        Название
+                    </th>
+                    <th>
+                        Сумма
+                    </th>
+                    <th>
+                        Тип
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="transaction-table-body">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="script.js" defer></script>
+
+</html>

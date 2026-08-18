@@ -1,0 +1,41 @@
+body{
+    font-family: "Roboto Mono", monospace;
+}
+.main-info{
+    display:flex;
+    justify-content: space-around;
+}
+
+.main-info_panel{
+    border: 1px solid black;
+    width: 120px;
+    border-radius: 15px;
+    padding: 10px;
+    background: azure;
+    box-shadow: 2px 2px 2px #423030;
+    text-align:center;
+}
+
+.transaction-input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+    button{
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px #423030;
+        border-radius: 5px;
+    }
+
+    button.income-button{
+        background-color: chartreuse;
+    }
+    button.expence-button{
+        background-color:crimson;
+    }
+}
+
+.transaction-table{
+    width: 100%;
+}
